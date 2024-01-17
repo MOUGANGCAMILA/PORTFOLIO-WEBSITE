@@ -12,33 +12,29 @@
 
 <body>
 
-    <div>
+ <div>
     <!------header-->
 
 
-
-
-
-
-
-
-
-
-
-
-<div id="header">
+  <div id="header">
     <div class="container">
        <nav>
             <p class="logo">My Portfolio</p> 
         
-            <ul>
-               <li><a href="#">HOME</a></li>
-               <li><a href="#">ABOUT</a></li>
-               <li><a href="#">SERVICES</a></li>
-               <li><a href="#">PORTFOLIO</a></li>
-               <li><a href="#">CONTACT</a></li>
+            <ul id="sidemenu">
+               <li><a href="#header">HOME</a></li>
+               <li><a href="#about">ABOUT</a></li>
+               <li><a href="#services">SERVICES</a></li>
+               <li><a href="#portfolio">WORK</a></li>
+               <li><a href="#contact">CONTACT</a></li>
+
+               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
 
             </ul>
+ 
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+    
         </nav>
         <div class="header-text">
          <p>Software Engineer</p>
@@ -47,14 +43,10 @@
 
     </div>
 
-</div>
+  </div>
 
 
-
-
-
-
-    </div>
+ </div>
     
 
 <!-------------------------------------------------------------------about-------------------------------------------------------->
@@ -251,7 +243,7 @@
             <div class="contact-right">
                 <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
